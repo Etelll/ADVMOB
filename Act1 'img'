@@ -1,0 +1,37 @@
+import React from 'react';
+import {View, Text, Image, ScrollView, TextInput} from 'react-native';
+
+const App = () => {
+  return (
+    <ScrollView
+    style={{ 
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+    }}>
+
+      <Text> My Favorite Cartoon </Text>
+      <View
+      >
+        <Text> STITCH </Text>
+        <Image
+          source={{
+            uri: 'https://webstockreview.net/images/stitch-clipart-main-character.jpg',
+          }}
+          style={{width: 200, height: 200}}
+        />
+      </View>
+      <TextInput
+        style={{
+          height: 50,
+          borderColor: 'gray',
+          borderWidth: 1,
+        }}
+        defaultValue="You can type in me"
+      />
+    </ScrollView>
+    
+  );
+};
+
+export default App;
